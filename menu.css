@@ -20,7 +20,6 @@ body {
 /* Navigation */
 nav {
   background-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   height: 15vh;
 }
 
@@ -250,7 +249,7 @@ main {
 }
 
 .info-section {
-  background-image: url(img/Breakfast\ flyerr_Page_1.jpg);
+  background-image: url(img/lunch\ flyer\ p1-11.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 1.5rem;
@@ -260,7 +259,7 @@ main {
 }
 
 .lunch-section {
-  background-image: url(img/lunch\ flyer\ p1-11.jpg);
+  background-image: url(img/Breakfast\ flyerr_Page_1.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 1.5rem;

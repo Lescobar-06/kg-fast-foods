@@ -90,10 +90,6 @@ a.about {
   font-weight: bold;
 }
 
-a.products {
-  color: #b71c1c;
-  font-weight: bold;
-}
 .nav-links a.products:hover {
   text-decoration: underline;
   font-weight: bold;
@@ -140,7 +136,7 @@ a.contacts {
 
 main {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   max-width: 100vw;
   height: 85vh;
   margin: 0;
@@ -149,17 +145,14 @@ main {
 }
 
 .grid {
-  gap: 30rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   display: inline-grid;
 }
 
 .menu-card {
+  height: 60vh;
   border-radius: 1.5rem;
-  box-shadow: 32px 4px 6px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  height: 71vh;
-  border-radius: 1.5rem;
+  width: 53vw;
 }
 
 .menu-card .title {
@@ -180,6 +173,7 @@ main {
 
 .menu-card img {
   height: 41rem;
+  width: 100%;
   object-fit: cover;
   margin: 0 auto;
   display: block;
@@ -194,17 +188,6 @@ main {
   padding: 0.5rem 1rem;
   border-radius: 9999px;
   margin-top: 1.5rem;
-}
-
-.offer-card {
-  background-image: url(img/Breakfast\ flyerr_Page_1.jpg);
-  background-size: cover;
-  border-radius: 1.5rem;
-  padding: 1.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: fit-content;
-  height: 70vh;
-  width: 100%;
 }
 
 .offer-title {
@@ -240,24 +223,26 @@ main {
 .sections {
   display: flex;
   flex-direction: column;
-  width: 49vw;
+  width: 45vw;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
 }
 
 .sect1 {
   display: flex;
-  flex-direction: row;
-  width: 45vw;
-  gap: 6rem;
+  justify-content: center;
 }
 
 .info-section {
-  background-image: url(img/Breakfast\ flyerr_Page_1.jpg);
+  background-image: url(img/aboutus-text.png);
   background-size: contain;
   background-repeat: no-repeat;
-  border-radius: 1.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 72%;
-  height: 58vh;
+  width: 33%;
+  /*height: 50vh;*/
+  align-items: center;
+  display: grid;
+  margin-top: -90px;
 }
 
 .lunch-section {
@@ -275,7 +260,8 @@ main {
   display: grid;
   align-items: end;
   position: relative;
-  margin-top: 100px;
+  margin-top: 45px;
+  width: 100%;
 }
 
 footer {
@@ -332,7 +318,7 @@ footer {
 
   .grid {
     grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+    align-items: baseline;
   }
 
   .footer-content {

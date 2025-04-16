@@ -211,8 +211,11 @@ main .grid a h3 {
   background-color: #ffc107;
   border-radius: 9px;
   position: absolute;
-  margin-left: 850px;
+  margin-left: 810px;
   margin-top: 230px;
+  justify-content: center;
+  display: flex;
+  width: 15%;
 }
 
 .menu-card {
@@ -383,6 +386,7 @@ footer {
 @media (min-width: 768px) {
   .nav-links {
     display: flex;
+    justify-content: flex-start;
     gap: 2rem;
   }
 
