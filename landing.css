@@ -1,4 +1,5 @@
-/* Reset and Base Styles */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +8,6 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #ffc107;
   min-height: 80vh;
 }
 
@@ -17,21 +17,56 @@ body {
   min-height: 100vh;
 }
 
-/* Navigation */
 nav {
   background-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  height: 15vh;
+  height: 20vh;
+  display: ruby;
+  align-items: bottom;
 }
 
-.nav-content {
+.nav-links {
   margin: 0 auto;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
   height: 100%;
   align-items: center;
-  width: 100%;
+  width: 50%;
+}
+
+main {
+  background-color: red;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main .grid {
+  background-image: url(img/p1-01.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30rem;
+  width: 100vw;
+  height: 90vh;
+}
+
+.contacts-container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 48%;
+}
+
+.contacts-container a.contacts :hover {
+  text-decoration: none;
+  color: #b71c1c;
+  transition: color 1.2s;
+  padding: 0.5rem 1rem;
 }
 
 .logo {
@@ -140,14 +175,12 @@ a.contacts {
   cursor: pointer;
 }
 
-/* Main Content */
 main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   max-width: 100vw;
   height: 85vh;
   margin: 0;
-  padding: 3rem 1rem;
   flex-grow: 1;
 }
 
@@ -157,7 +190,6 @@ main {
   display: inline-grid;
 }
 
-/* Menu Card */
 .menu-card {
   border-radius: 1.5rem;
   box-shadow: 32px 4px 6px rgba(0, 0, 0, 0.1);
@@ -283,8 +315,7 @@ main {
 }
 
 footer {
-  background-color: #b71c1c;
-  color: white;
+  color: #000000;
   margin-top: 3rem;
   padding: 2rem 1rem;
 }
@@ -307,7 +338,6 @@ footer {
   gap: 0.5rem;
 }
 
-/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -325,7 +355,6 @@ footer {
   background: #8c1515;
 }
 
-/* Media Queries */
 @media (min-width: 768px) {
   .nav-links {
     display: flex;
