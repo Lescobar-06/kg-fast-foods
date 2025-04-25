@@ -19,7 +19,7 @@ body {
 
 nav {
   background-color: white;
-  height: 20vh;
+  height: 10vh;
   display: ruby;
   align-items: bottom;
 }
@@ -117,13 +117,13 @@ main .grid {
 
 .nav-links a {
   text-decoration: none;
-  color: #ffc505;
+  color: #b71c1c;
   transition: color 2.2s;
   padding: 0.5rem 1rem;
 }
 
 .nav-links a:hover {
-  color: #aa100b;
+  color: #ffc505;
   text-decoration: underline;
   font-weight: bold;
   transition: color 0.5s;
@@ -136,7 +136,7 @@ main .grid {
 }
 
 a.about {
-  color: #ffc105;
+  color: #ac1f24;
 }
 
 .nav-links a.about:hover {
@@ -145,7 +145,7 @@ a.about {
 }
 
 a.products {
-  color: #ffc105;
+  color: #b71c1c;
 }
 .nav-links a.products:hover {
   text-decoration: underline;
@@ -153,7 +153,7 @@ a.products {
 }
 
 a.kota {
-  color: #ffc105;
+  color: #b71c1c;
 }
 .nav-links a.kota:hover {
   text-decoration: underline;
@@ -161,7 +161,7 @@ a.kota {
 }
 
 a.kota {
-  color: #ffc105;
+  color: #b71c1c;
 }
 .nav-links a.kota:hover {
   text-decoration: underline;
@@ -169,7 +169,7 @@ a.kota {
 }
 
 a.breakfast {
-  color: #ffc105;
+  color: #b71c1c;
 }
 .nav-links a.breakfast:hover {
   text-decoration: underline;
@@ -177,7 +177,7 @@ a.breakfast {
 }
 
 a.contacts {
-  color: #ffc105;
+  color: #b71c1c;
 }
 .nav-links a.contacts:hover {
   text-decoration: underline;
@@ -212,10 +212,21 @@ main .grid a h3 {
   border-radius: 9px;
   position: absolute;
   margin-left: 810px;
-  margin-top: 230px;
+  margin-top: 270px;
   justify-content: center;
   display: flex;
-  width: 15%;
+  width: 25%;
+}
+
+main .grid a h3:hover {
+  font-weight: bold;
+  color: #000000;
+  transition: ease-in-out 1.5s;
+  border-radius: 9999px;
+}
+main .grid a h3.active {
+  color: #b71c1c;
+  font-weight: bold;
 }
 
 .menu-card {
