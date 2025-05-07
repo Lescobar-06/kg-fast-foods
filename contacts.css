@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  padding: 2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  margin-left: 1295px;
+}
+
+.nav-link {
+  color: #ffa5a5;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.nav-link.active {
+  color: #000;
+  text-decoration: underline;
+  text-decoration-color: #ffd700;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffc505;
+  transition: color 1.2s;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links a:hover {
+  color: #aa100b;
+  text-decoration: underline;
+  font-weight: bold;
+  transition: color 0.5s;
+  border-radius: 9999px;
+}
+
+a.about {
+  color: #ffc105;
+}
+
+.nav-links a.about:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.nav-links a.products:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.nav-links a.kota:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.nav-links a.kota:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+a.breakfast {
+  color: #ffc105;
+}
+.nav-links a.breakfast:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.logo {
+  width: 50px;
+  height: 60px;
+  background-image: url(img/logo\ final\ color.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 4rem;
+}
+
+.newsletter-section {
+  max-width: 600px;
+  text-align: right;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+
+h1 span {
+  color: #b71c1c;
+  font-style: italic;
+  font-family: Gautreaux;
+}
+
+.newsletter-section p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 1rem;
+}
+
+input[type="email"] {
+  flex: 1;
+  padding: 1rem 1.5rem;
+  border: 2px solid #b71c1c;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+input[type="email"]::placeholder {
+  color: #999;
+}
+
+button {
+  background: #b71c1c;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: #9a0007;
+}
+
+button svg {
+  width: 24px;
+  height: 24px;
+  color: white;
+}
+
+footer {
+  background: #b71c1c;
+  color: white;
+  padding: 4rem 4rem 2rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.footer-left,
+.footer-right {
+  flex: 1;
+}
+
+footer h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  margin-bottom: 0.75rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  main {
+    padding: 2rem;
+  }
+
+  .newsletter-section {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer-right {
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+    border-radius: 50px;
+  }
+}

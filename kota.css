@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +6,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #ffc107;
   min-height: 80vh;
 }
 
@@ -17,73 +16,20 @@ body {
   min-height: 100vh;
 }
 
+/* Navigation */
 nav {
   background-color: white;
-  height: 10vh;
-  display: ruby;
-  align-items: bottom;
+  height: 15vh;
 }
 
-.nav-links {
+.nav-content {
   margin: 0 auto;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
   height: 100%;
   align-items: center;
-  width: 50%;
-  transition: color 2.2s;
-}
-
-.nav-links a:hover {
-  text-decoration: none;
-}
-
-a.contacts {
-  color: #ffc105;
-  text-decoration: none;
-  transition: color 2.2s;
-}
-.contacts-container a.contacts:hover {
-  text-decoration: underline;
-  font-weight: bold;
-  color: #b71c1c;
-}
-
-main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-main .grid {
-  display: flex;
-  flex-direction: row;
-  background-image: url(img/p1-01.png);
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30rem;
-  width: 100vw;
-  height: 90vh;
-}
-
-.contacts-container {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  width: 48%;
-}
-
-.contacts-container a.contacts :hover {
-  text-decoration: none;
-  color: #b71c1c;
-  transition: color 1.2s;
-  padding: 0.5rem 1rem;
+  width: 100%;
 }
 
 .logo {
@@ -117,26 +63,21 @@ main .grid {
 
 .nav-links a {
   text-decoration: none;
-  color: #b71c1c;
-  transition: color 2.2s;
+  color: #ffc505;
+  transition: color 1.2s;
   padding: 0.5rem 1rem;
 }
 
 .nav-links a:hover {
-  color: #ffc505;
+  color: #aa100b;
   text-decoration: underline;
   font-weight: bold;
   transition: color 0.5s;
   border-radius: 9999px;
 }
 
-.nav-links a.active {
-  color: #b71c1c;
-  font-weight: bold;
-}
-
 a.about {
-  color: #ac1f24;
+  color: #ffc105;
 }
 
 .nav-links a.about:hover {
@@ -144,9 +85,6 @@ a.about {
   font-weight: bold;
 }
 
-a.products {
-  color: #b71c1c;
-}
 .nav-links a.products:hover {
   text-decoration: underline;
   font-weight: bold;
@@ -154,6 +92,7 @@ a.products {
 
 a.kota {
   color: #b71c1c;
+  font-weight: bold;
 }
 .nav-links a.kota:hover {
   text-decoration: underline;
@@ -169,7 +108,7 @@ a.kota {
 }
 
 a.breakfast {
-  color: #b71c1c;
+  color: #ffc105;
 }
 .nav-links a.breakfast:hover {
   text-decoration: underline;
@@ -177,7 +116,7 @@ a.breakfast {
 }
 
 a.contacts {
-  color: #b71c1c;
+  color: #ffc105;
 }
 .nav-links a.contacts:hover {
   text-decoration: underline;
@@ -191,48 +130,28 @@ a.contacts {
   cursor: pointer;
 }
 
+/* Main Content */
 main {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   max-width: 100vw;
   height: 85vh;
   margin: 0;
+  padding: 3rem 1rem;
   flex-grow: 1;
 }
 
 .grid {
-  grid-template-columns: repeat(2, 1fr);
+  gap: 30rem;
+  grid-template-columns: repeat(3, 1fr);
   display: inline-grid;
+  width: 49vw;
 }
 
-main .grid a h3 {
-  color: #b71c1c;
-  font-size: 2.1rem;
-  font-weight: bold;
-  background-color: #ffc107;
-  border-radius: 9px;
-  position: absolute;
-  margin-left: 810px;
-  margin-top: 270px;
-  justify-content: center;
-  display: flex;
-  width: 25%;
-}
-
-main .grid a h3:hover {
-  font-weight: bold;
-  color: #000000;
-  transition: ease-in-out 1.5s;
-  border-radius: 9999px;
-}
-main .grid a h3.active {
-  color: #b71c1c;
-  font-weight: bold;
-}
-
+/* Menu Card */
 .menu-card {
   border-radius: 1.5rem;
-  box-shadow: 32px 4px 6px rgba(0, 0, 0, 0.1);
-  width: 100%;
+  width: 70%;
   height: 71vh;
   border-radius: 1.5rem;
 }
@@ -272,7 +191,7 @@ main .grid a h3.active {
 }
 
 .offer-card {
-  background-image: url(img/Breakfast\ flyerr_Page_1.jpg);
+  background-image: url(img/Menu-cover.png);
   background-size: cover;
   border-radius: 1.5rem;
   padding: 1.5rem;
@@ -316,34 +235,30 @@ main .grid a h3.active {
   display: flex;
   flex-direction: column;
   width: 49vw;
+  justify-content: end;
 }
 
 .sect1 {
   display: flex;
   flex-direction: row;
-  width: 45vw;
-  gap: 6rem;
+  width: 50vw;
 }
 
 .info-section {
-  background-image: url(img/Breakfast\ flyerr_Page_1.jpg);
+  background-image: url(img/bestkota-text.png);
   background-size: contain;
   background-repeat: no-repeat;
-  border-radius: 1.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 72%;
-  height: 58vh;
+  width: 24vw;
 }
 
 .lunch-section {
-  background-image: url(img/lunch\ flyer\ p1-11.jpg);
+  background-image: url(img/kota-menu-cut.png);
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 1.5rem;
-  padding: 1.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 69%;
-  height: 58vh;
+  height: 73vh;
+  margin-left: 55px;
 }
 
 .text-section {
@@ -354,7 +269,8 @@ main .grid a h3.active {
 }
 
 footer {
-  color: #000000;
+  background-color: #b71c1c;
+  color: white;
   margin-top: 3rem;
   padding: 2rem 1rem;
 }
@@ -377,12 +293,13 @@ footer {
   gap: 0.5rem;
 }
 
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: rgb(206, 0, 0);
+  background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -394,10 +311,10 @@ footer {
   background: #8c1515;
 }
 
+/* Media Queries */
 @media (min-width: 768px) {
   .nav-links {
     display: flex;
-    justify-content: flex-start;
     gap: 2rem;
   }
 
